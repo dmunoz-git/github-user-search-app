@@ -46,27 +46,49 @@
   /* Font */
   --font-sp-mono-bold: "Space Mono Bold", serif-sans;
   --font-sp-mono-reg: "Space Mono Regular", serif-sans;
+}
 
-  /* Properties */
-  font-size: var(--body-fs);
+/* Fonts */ 
+@font-face {
+  font-family: "Space Mono Bold";
+  src: url("./assets/fonts/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Mono Regular";
+  src: url("./assets/fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
+html {
+  font-size: var(--body-fs);
+  font-family: var(--font-sp-mono-reg);
+}
+
+
 body {
   font-family: var(--font-sp-mono-reg);
+  background-color: var(--background-light-color);
 }
 
 h1 {
   font-size: var(--h1-fs);
   line-height: var(--h1-lh);
+  font-family: var(--font-sp-mono-bold);
+
 }
 
 h2 {
   font-size: var(--h2-fs);
   line-height: var(--h2-lh);
+  font-family: var(--font-sp-mono-bold);
 }
 
 h3 {
@@ -80,3 +102,4 @@ h4 {
 }
 
 p { line-height: var(--body-lh);}
+
