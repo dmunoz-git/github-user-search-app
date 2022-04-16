@@ -1,6 +1,7 @@
 :root {
   /* Light Theme */
   --background-light-color: hsl(227, 100%, 98%);
+  --background-secondary-color: hsl(0, 0%, 100%);
   --primary-light-color: hsl(217, 35%, 45%);
   --secondary-light-color: hsl(212, 100%, 50%);
 
@@ -27,6 +28,8 @@
   --h3-fs: 1.0667em;
   --h4-fs: 0.8667em;
   --body-fs: 15px;
+
+  --button-fs: 0.9333em;
 
   /* Line Height */
   --h1-lh: 2.5333rem;

@@ -1,4 +1,4 @@
 
-export const ProfileCard = () => {
-
+export const ProfileCard = ({user}) => {
+    
 }
