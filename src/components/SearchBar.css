@@ -1,4 +1,8 @@
 .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     width: 100%;
     background: var(--background-secondary-color);
     padding: 1.3333rem 1.0667rem;
@@ -6,8 +10,15 @@
     box-shadow: var(--shadow-light);
 }
 
+.search-bar__icon {
+    width: 1.3333rem;
+    height: 1.3333rem;
+    margin-right: 0.6rem;
+}
+
 .search-bar__input {
     border: 0;
+    width: 100%;
     font-size: var(--body-fs);
 }
 
@@ -17,5 +28,4 @@
     padding: 0.8333rem 1.0667rem ;
     border: 0;
     border-radius: 10px;
-
 }

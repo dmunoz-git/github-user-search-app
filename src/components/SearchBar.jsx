@@ -6,6 +6,7 @@ export const SearchBar = ({ onSearch }) => {
 
     return (
         <div className="search-bar">
+            <img src="src/assets/images/icon-search.svg" className="search-bar__icon" alt="" />
             <input
                 className="search-bar__input"
                 type="text"
