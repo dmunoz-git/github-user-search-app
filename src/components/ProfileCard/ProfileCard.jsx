@@ -1,3 +1,4 @@
+import moment from "moment";
 import "./ProfileCard.css";
 
 export const ProfileCard = ({user}) => {
@@ -8,47 +9,47 @@ export const ProfileCard = ({user}) => {
                 <div className="profile-card__info">
                     <h3 className="profile-card__name">{user.login}</h3>
                     <span className="profile-card__username">@{user.login}</span>
-                    <p className="profile-card__date">{user.created_at}</p>
+                    <p className="profile-card__date">Joined {moment(user.created_at).format('D MMM YYYY')}</p>
                 </div>
             </div>
             <p className="profile-card__description">
-                This is a description
+                {user.bio ? user.bio : "No bio available"}
             </p>
 
             <div className="profile-card__stats">
                 <div className="profile-card__stat">
                     <span className="title">Repos</span>
-                    <span className="profile-card__value">8</span>
+                    <span className="profile-card__value">{user.public_repos}</span>
                 </div>
                 <div className="profile-card__stat">
                     <span className="title">Followers</span>
-                    <span className="profile-card__value">3938</span>
+                    <span className="profile-card__value">{user.followers}</span>
                 </div>
                 <div className="profile-card__stat">
                     <span className="title">Following</span>
-                    <span className="profile-card__value">9</span>
+                    <span className="profile-card__value">{user.following}</span>
                 </div>
             </div>
 
             <div className="profile-card__links">
                 <a href="" className="profile-card__link">
                     <img src="src/assets/images/icon-location.svg" alt="" />
-                    <span>San Francisco</span>
+                    <span>{user.location ? user.location : "Not Avalible"}</span>
                 </a>
 
                 <a href="" className="profile-card__link">
                     <img src="src/assets/images/icon-website.svg" alt="" />
-                    <span>http://github.com</span>
+                    <span>{user.html_url}</span>
                 </a>
 
                 <a href="" className="profile-card__link">
                     <img src="src/assets/images/icon-twitter.svg" alt="" />
-                    <span>Not Avalible</span>
+                    <span>{user.twitter_username ? user.twitter_username : "Not Avalible"}</span>
                 </a>
 
                 <a href="" className="profile-card__link">
                     <img src="src/assets/images/icon-company.svg" alt="" />
-                    <span>@github</span>
+                    <span>{user.company ? user-company : "Not Avalible" }</span>
                 </a>
             </div>
         </section>

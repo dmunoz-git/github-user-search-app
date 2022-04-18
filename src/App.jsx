@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { getUserInfo } from './services/user';
-import { ProfileCard } from './components/ProfileCard';
+import { ProfileCard } from './components/ProfileCard/ProfileCard';
 import { Toolbar } from './components/Toolbar';
-import { SearchBar } from './components/SearchBar';
+import { SearchBar } from './components/SearchBar/SearchBar';
 import './App.css'
 
 function App() {
