@@ -11,10 +11,10 @@ function App() {
     getUserInfo('Godm0de').then(setUser);
   }, [])
   return (
-    <main className='container'>
+    <main className='container flex-layout'>
       <Toolbar title="devfinder" />
       <SearchBar />
-      <ProfileCard />
+      <ProfileCard user={user}/>
     </main>
   )
 }
