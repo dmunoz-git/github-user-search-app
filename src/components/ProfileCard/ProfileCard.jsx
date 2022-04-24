@@ -7,10 +7,10 @@ export const ProfileCard = ({user}) => {
             <div className="profile-card__avatar">
                 <img src={user.avatar_url} className="profile-card__image" alt="" />
                 <div className="profile-card__info">
-                    <h3 className="profile-card__name">{user.login}</h3>
+                    <h3 className="profile-card__name">{user.name}</h3>
                     <span className="profile-card__username">@{user.login}</span>
-                    <p className="profile-card__date">Joined {moment(user.created_at).format('D MMM YYYY')}</p>
                 </div>
+                <p className="profile-card__date">Joined {moment(user.created_at).format('D MMM YYYY')}</p>
             </div>
             <p className="profile-card__description">
                 {user.bio ? user.bio : "No bio available"}
@@ -49,7 +49,7 @@ export const ProfileCard = ({user}) => {
 
                 <a href="" className="profile-card__link">
                     <img src="src/assets/images/icon-company.svg" alt="" />
-                    <span>{user.company ? user-company : "Not Avalible" }</span>
+                    <span>{user.company ? user.company : "Not Avalible" }</span>
                 </a>
             </div>
         </section>

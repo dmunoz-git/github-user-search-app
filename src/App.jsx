@@ -7,14 +7,18 @@ import './App.css'
 
 function App() {
   const [user, setUser] = useState({});
+  
   useEffect(() => {
     getUserInfo('Godm0de').then(setUser);
   }, [])
+
   return (
-    <main className='container flex-layout'>
+    <main className='container'>
+      <div className="github-user-search">
       <Toolbar title="devfinder" />
-      <SearchBar />
+      <SearchBar onSearch={(user) => setUser(user)}/>
       <ProfileCard user={user}/>
+      </div>
     </main>
   )
 }

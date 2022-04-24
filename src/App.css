@@ -1,8 +1,13 @@
 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     max-width: 48.6667rem;
-    margin: 0 auto;
+    height: 100vh;
     padding: 0 1.6rem;
 }
 
-.flex-layout {
+.github-user-search{
+    width: 100%;
 }

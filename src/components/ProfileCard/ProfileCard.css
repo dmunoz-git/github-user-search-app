@@ -11,15 +11,20 @@
 .profile-card__image {
     max-width: 4.6667rem;
     max-height: 4.6667rem;
+
+    border-radius: 50%;
 }
 
 .profile-card__avatar {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.3rem;
+
 }
 
 .profile-card__avatar * {
     margin: 0;
+
 }
 
 .profile-card__username {
@@ -43,13 +48,19 @@
 }
 
 .profile-card__links {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 308px);
     gap: 1.1333rem;
     margin-top: var(--mg-4);
 }
 
+.profile-card__date {
+    margin-left: auto;
+}
+
 .profile-card__link {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20px auto;
+    align-items: center;
     gap: 1.3333rem;
 }
