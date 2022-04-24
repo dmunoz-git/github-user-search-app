@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  /* Light Theme */
+  --background-light-color: hsl(227, 100%, 98%);
+  --background-secondary-color: hsl(0, 0%, 100%);
+  --primary-light-color: hsl(217, 35%, 45%);
+  --secondary-light-color: hsl(212, 100%, 50%);
+
+  --text-light-color: hsl(217, 35%, 45%);
+  --title-light-color: hsl(220, 18%, 16%);
+  --icon-light-color: hsl(217, 35%, 45%);
+
+  --shadow-light: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+
+  /* Dark Theme */
+  --background-dark-color: hsl(220, 40%, 13%);
+  --primary-dark-color: hsl(222, 41%, 20%);
+  --secondary-dark-color: hsl(212, 100%, 50%);
+
+  --text-dark-color: hsl(0, 0%, 100%);
+  --title-dark-color: hsl(0, 0%, 100%);
+  --icon-dark-color: hsl(0, 0%, 100%);
+
+  --shadow-dark: none;
+
+  /* Font-size */
+  --h1-fs: 1.7333em;
+  --h2-fs: 1.4667em;
+  --h3-fs: 1.0667em;
+  --h4-fs: 0.8667em;
+  --body-fs: 15px;
+
+  --button-fs: 0.9333em;
+
+  /* Line Height */
+  --h1-lh: 2.5333rem;
+  --h2-lh: 2.2rem;
+  --h3-lh: 1.6rem;
+  --h4-lh: 1.3333rem;
+  --body-lh: 1.6667rem;
+
+  /* Margins */
+  --mg-1: 0.0667rem;
+  --mg-2: 0.1333rem;
+  --mg-3: 1.2667rem;
+  --mg-4: 1.3333rem;
+  --mg-5: 1.6rem;
+  --mg-6: 2.4667rem;
+
+  /* Font */
+  --font-sp-mono-bold: "Space Mono Bold", serif-sans;
+  --font-sp-mono-reg: "Space Mono Regular", serif-sans;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Fonts */ 
+@font-face {
+  font-family: "Space Mono Bold";
+  src: url("./assets/fonts/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "Space Mono Regular";
+  src: url("./assets/fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--body-fs);
+  font-family: var(--font-sp-mono-reg);
+}
+
+
+body {
+  font-family: var(--font-sp-mono-reg);
+  background-color: var(--background-light-color);
+}
+
+h1 {
+  font-size: var(--h1-fs);
+  line-height: var(--h1-lh);
+  font-family: var(--font-sp-mono-bold);
+
+}
+
+h2 {
+  font-size: var(--h2-fs);
+  line-height: var(--h2-lh);
+  font-family: var(--font-sp-mono-bold);
+}
+
+h3 {
+  font-size: var(--h3-fs);
+  line-height: var(--h3-lh);
+}
+
+h4 {
+  font-size: var(--h4-fs);
+  line-height: var(--h4-lh);
+}
+
+p { line-height: var(--body-lh);}
+
