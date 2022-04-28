@@ -12,10 +12,12 @@ export const ProfileCard = ({user}) => {
             <div className="profile-card__avatar">
                 <img src={user.avatar_url} className="profile-card__image" alt="" />
                 <div className="profile-card__info">
+                    <div className="profile-card__data">
                     <h3 className="profile-card__name">{user.name}</h3>
                     <span className="profile-card__username">@{user.login}</span>
+                    </div>     
+                    <p className="profile-card__date">Joined {moment(user.created_at).format('D MMM YYYY')}</p>
                 </div>
-                <p className="profile-card__date">Joined {moment(user.created_at).format('D MMM YYYY')}</p>
             </div>
             <p className="profile-card__description">
                 {user.bio ? user.bio : "No bio available"}

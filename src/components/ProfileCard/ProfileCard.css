@@ -17,7 +17,6 @@
 
 .profile-card__avatar {
     display: flex;
-    flex-wrap: wrap;
     gap: 1.3rem;
 
 }
@@ -25,6 +24,22 @@
 .profile-card__avatar * {
     margin: 0;
 
+}
+
+.profile-card__info {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+@media screen and (max-width: 777px) {
+    .profile-card__info {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }
 
 .profile-card__username {
@@ -54,9 +69,7 @@
     margin-top: var(--mg-4);
 }
 
-.profile-card__date {
-    margin-left: auto;
-}
+
 
 .profile-card__link {
     display: grid;
