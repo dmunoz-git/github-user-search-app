@@ -1,5 +1,10 @@
 import moment from "moment";
 import "./ProfileCard.css";
+import iconCompany from "../../assets/images/icon-company.svg";
+import iconLocation from "../../assets/images/icon-location.svg";
+import iconTwitter from "../../assets/images/icon-twitter.svg";
+import iconWebsite from "../../assets/images/icon-website.svg";
+
 
 export const ProfileCard = ({user}) => {
     return (
@@ -33,22 +38,22 @@ export const ProfileCard = ({user}) => {
 
             <div className="profile-card__links">
                 <a href="" className="profile-card__link">
-                    <img src="src/assets/images/icon-location.svg" alt="" />
+                    <img src={iconLocation} alt="" />
                     <span>{user.location ? user.location : "Not Avalible"}</span>
                 </a>
 
                 <a href="" className="profile-card__link">
-                    <img src="src/assets/images/icon-website.svg" alt="" />
+                    <img src={iconWebsite} alt="" />
                     <span>{user.html_url}</span>
                 </a>
 
                 <a href="" className="profile-card__link">
-                    <img src="src/assets/images/icon-twitter.svg" alt="" />
+                    <img src={iconTwitter} alt="" />
                     <span>{user.twitter_username ? user.twitter_username : "Not Avalible"}</span>
                 </a>
 
                 <a href="" className="profile-card__link">
-                    <img src="src/assets/images/icon-company.svg" alt="" />
+                    <img src={iconCompany} alt="" />
                     <span>{user.company ? user.company : "Not Avalible" }</span>
                 </a>
             </div>

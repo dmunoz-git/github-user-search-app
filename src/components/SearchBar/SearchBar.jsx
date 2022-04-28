@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getUserInfo } from "../../services/user";
 import "./SearchBar.css";
+import iconSearch from "../../assets/images/icon-search.svg";
 
 export const SearchBar = ({onSearch}) => {
     const [value, setValue] = useState('');
@@ -12,7 +13,7 @@ export const SearchBar = ({onSearch}) => {
 
     return (
         <form className="search-bar" onSubmit={searchUser}>
-            <img src="src/assets/images/icon-search.svg" className="search-bar__icon" alt="" />
+            <img src={iconSearch} className="search-bar__icon" alt="" />
             
                 <input
                     className="search-bar__input"
