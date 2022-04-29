@@ -1,0 +1,15 @@
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.switch__label {
+    text-transform: uppercase;
+    letter-spacing: 0.1667rem;
+    cursor: pointer;
+}
+
+.switch--dark .switch__label {
+    color: #fff;
+}
