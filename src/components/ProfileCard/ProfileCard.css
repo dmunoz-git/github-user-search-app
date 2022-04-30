@@ -58,7 +58,6 @@
 .profile-card__stat {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .profile-card__links {
@@ -80,6 +79,9 @@
     text-decoration: none;
 }
 
+.profile-card__value {
+    font-weight: bold;
+}
 
 .profile-card__name, .profile-card__date, .profile-card__title, .profile-card__value, .profile-card__description {
     color: var(--title-color);

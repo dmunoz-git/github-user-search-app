@@ -1,4 +1,3 @@
-export const changeTheme = (theme) => {
-    console.log(theme);
-    document.documentElement.classList.toggle('dark-theme');
+export const changeTheme = () => {
+        document.documentElement.classList = `${localStorage.getItem('theme').replace(/['"]+/g, '')}-theme`;
 }

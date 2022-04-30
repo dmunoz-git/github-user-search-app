@@ -8,6 +8,7 @@
     padding: 1.3333rem 1.0667rem;
     border-radius: 15px;
     box-shadow: var(--box-shadow);
+    color: var(--title-color);
 }
 
 .search-bar__icon {

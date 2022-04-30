@@ -1,14 +1,4 @@
 :root {
-  --background-color: hsl(227, 100%, 98%);
-  --primary-color:  hsl(0, 0%, 100%);
-  --secondary-color: hsl(212, 100%, 50%);
-
-  --text-color: hsl(217, 35%, 45%);
-  --title-color: hsl(220, 18%, 16%);
-  --box-shadow:  0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
-
-  --error-color: hsl(0, 92%, 62%);
-
   /* Font-size */
   --h1-fs: 1.7333em;
   --h2-fs: 1.4667em;
@@ -36,6 +26,18 @@
   /* Font */
   --font-sp-mono-bold: "Space Mono Bold", serif-sans;
   --font-sp-mono-reg: "Space Mono Regular", serif-sans;
+}
+
+:root.light-theme {
+  --background-color: hsl(227, 100%, 98%);
+  --primary-color:  hsl(0, 0%, 100%);
+  --secondary-color: hsl(212, 100%, 50%);
+
+  --text-color: hsl(217, 35%, 45%);
+  --title-color: hsl(220, 18%, 16%);
+  --box-shadow:  0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+
+  --error-color: hsl(0, 92%, 62%);
 }
 
 :root.dark-theme {
