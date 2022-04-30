@@ -22,6 +22,11 @@
     width: 100%;
     font-size: var(--body-fs);
     background: transparent;
+    color: var(--title-color);
+}
+
+.search-bar__input::placeholder{
+    color: var(--text-color);
 }
 
 .search-bar__input:focus {

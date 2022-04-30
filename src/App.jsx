@@ -3,7 +3,6 @@ import { getUserInfo } from './services/user';
 import { ProfileCard } from './components/ProfileCard/ProfileCard';
 import { Toolbar } from './components/Toolbar/Toolbar';
 import { SearchBar } from './components/SearchBar/SearchBar';
-import { changeTheme } from './services/theme';
 import './App.css'
 
 function App() {

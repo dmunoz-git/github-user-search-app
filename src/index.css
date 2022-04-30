@@ -71,6 +71,10 @@
   box-sizing: border-box;
 }
 
+* {
+  transition: background-color 0.5s ease;
+}
+
 html {
   font-size: var(--body-fs);
   font-family: var(--font-sp-mono-reg);
@@ -80,8 +84,9 @@ html {
 body {
   font-family: var(--font-sp-mono-reg);
   background-color: var(--background-color);
-  transition: background-color 0.5s ease;
+  overflow: hidden;
 }
+
 
 h1 {
   font-size: var(--h1-fs);
