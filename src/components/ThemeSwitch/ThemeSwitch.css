@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    color: var(--title-color);
 }
 
 .switch__label {
@@ -12,8 +13,3 @@
 .switch__icon {
     cursor: pointer;
 }
-
-.switch--dark .switch__label {
-    color: var(--title-color);
-}
-

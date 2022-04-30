@@ -10,14 +10,15 @@ export const ThemeSwitch = () => {
 
     const toggleTheme = async () => {
         await setTheme((theme === 'light') ? 'dark' : 'light');
-
         changeTheme(theme);
+
+        console.log(theme);
     };
 
     return (
-        <div className={(theme === 'light') ? "switch" : "switch switch--dark"}>
-            <span className='switch__label'>{(theme === 'light') ? "dark" : "light"}</span>
-            <img  className='switch__icon' src={(theme === 'light') ? iconMoon : iconSun}  onClick={toggleTheme} alt="Choose light or dark theme" />
+        <div className="switch">
+            <span className='switch__label'>{(theme === 'light') ? "light" : "dark"}</span>
+            <img  className='switch__icon' src={(theme === 'light') ? iconSun : iconMoon}  onClick={toggleTheme} alt="Choose light or dark theme" />
         </div>
     );
 };
