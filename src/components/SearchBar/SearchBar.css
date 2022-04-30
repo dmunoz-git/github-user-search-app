@@ -4,10 +4,10 @@
     justify-content: space-between;
 
     width: 100%;
-    background: var(--background-secondary-color);
+    background: var(--primary-color);
     padding: 1.3333rem 1.0667rem;
     border-radius: 15px;
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--box-shadow);
 }
 
 .search-bar__icon {
@@ -20,6 +20,7 @@
     border: 0;
     width: 100%;
     font-size: var(--body-fs);
+    background: transparent;
 }
 
 .search-bar__input:focus {
@@ -27,14 +28,9 @@
 }
 
 .search-bar__button{
-    background: var(--secondary-light-color);
-    color: var(--background-secondary-color);
+    background: var(--secondary-color);
+    color: var(--primary-color);
     padding: 0.8333rem 1.0667rem ;
     border: 0;
     border-radius: 10px;
-}
-
-.profile-card__link {
-    color: var(--background-primary-color);
-    text-decoration: none;
 }

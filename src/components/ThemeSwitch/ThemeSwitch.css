@@ -7,9 +7,13 @@
 .switch__label {
     text-transform: uppercase;
     letter-spacing: 0.1667rem;
+}
+
+.switch__icon {
     cursor: pointer;
 }
 
 .switch--dark .switch__label {
-    color: #fff;
+    color: var(--title-color);
 }
+

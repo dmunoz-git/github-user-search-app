@@ -25,15 +25,15 @@ export const ProfileCard = ({user}) => {
 
             <div className="profile-card__stats">
                 <div className="profile-card__stat">
-                    <span className="title">Repos</span>
+                    <span className="profile-card__title">Repos</span>
                     <span className="profile-card__value">{user.public_repos}</span>
                 </div>
                 <div className="profile-card__stat">
-                    <span className="title">Followers</span>
+                    <span className="profile-card__title">Followers</span>
                     <span className="profile-card__value">{user.followers}</span>
                 </div>
                 <div className="profile-card__stat">
-                    <span className="title">Following</span>
+                    <span className="profile-card__title">Following</span>
                     <span className="profile-card__value">{user.following}</span>
                 </div>
             </div>
