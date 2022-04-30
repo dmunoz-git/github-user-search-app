@@ -1,11 +1,10 @@
 .profile-card {
     padding: 2.1333rem 1.6rem;
-    /*To remove*/
     margin-top: var(--mg-4);
-    /**/
-    background: var(--background-secondary-color);
+    
     border-radius: 15px;
-    box-shadow: var(--shadow-light);
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
 }
 
 .profile-card__image {
@@ -44,7 +43,7 @@
 
 .profile-card__username {
     font-size: var(--body-fs);
-    color: var(--secondary-light-color);
+    color: var(--secondary-color);
 }
 
 .profile-card__stats {
@@ -52,7 +51,7 @@
     justify-content: space-around;
     gap: 0.8rem;
     padding: 1.2rem 0.9333rem;
-    background: var(--background-light-color);
+    background: var(--background-color);
     border-radius: 10px;
 }
 
@@ -76,4 +75,12 @@
     grid-template-columns: 20px auto;
     align-items: center;
     gap: 1.3333rem;
+
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+.profile-card__name, .profile-card__date, .profile-card__title, .profile-card__value, .profile-card__description {
+    color: var(--title-color);
 }

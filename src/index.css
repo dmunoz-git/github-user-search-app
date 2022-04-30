@@ -1,26 +1,13 @@
 :root {
-  /* Light Theme */
-  --background-light-color: hsl(227, 100%, 98%);
-  --background-secondary-color: hsl(0, 0%, 100%);
-  --primary-light-color: hsl(217, 35%, 45%);
-  --secondary-light-color: hsl(212, 100%, 50%);
+  --background-color: hsl(227, 100%, 98%);
+  --primary-color:  hsl(0, 0%, 100%);
+  --secondary-color: hsl(212, 100%, 50%);
 
-  --text-light-color: hsl(217, 35%, 45%);
-  --title-light-color: hsl(220, 18%, 16%);
-  --icon-light-color: hsl(217, 35%, 45%);
+  --text-color: hsl(217, 35%, 45%);
+  --title-color: hsl(220, 18%, 16%);
+  --box-shadow:  0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 
-  --shadow-light: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
-
-  /* Dark Theme */
-  --background-dark-color: hsl(220, 40%, 13%);
-  --primary-dark-color: hsl(222, 41%, 20%);
-  --secondary-dark-color: hsl(212, 100%, 50%);
-
-  --text-dark-color: hsl(0, 0%, 100%);
-  --title-dark-color: hsl(0, 0%, 100%);
-  --icon-dark-color: hsl(0, 0%, 100%);
-
-  --shadow-dark: none;
+  --error-color: hsl(0, 92%, 62%);
 
   /* Font-size */
   --h1-fs: 1.7333em;
@@ -51,6 +38,18 @@
   --font-sp-mono-reg: "Space Mono Regular", serif-sans;
 }
 
+:root.dark-theme {
+  --background-color: hsl(220, 40%, 13%);
+  --primary-color:  hsl(222, 41%, 20%);
+  --secondary-color: hsl(212, 100%, 50%);
+
+  --text-color: hsl(0, 0%, 100%);
+  --title-color: hsl(0, 0%, 100%);
+  --box-shadow: none;
+  
+  --error-color: hsl(0, 92%, 62%);
+}
+
 /* Fonts */ 
 @font-face {
   font-family: "Space Mono Bold";
@@ -78,7 +77,8 @@ html {
 
 body {
   font-family: var(--font-sp-mono-reg);
-  background-color: var(--background-light-color);
+  background-color: var(--background-color);
+  transition: background-color 0.5s ease;
 }
 
 h1 {
