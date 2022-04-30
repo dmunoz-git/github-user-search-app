@@ -79,6 +79,11 @@
     text-decoration: none;
 }
 
+.profile-card__link--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .profile-card__value {
     font-weight: bold;
 }
