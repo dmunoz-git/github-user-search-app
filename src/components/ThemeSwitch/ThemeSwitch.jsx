@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import iconSun from "../../assets/images/icon-sun.svg";
 import iconMoon from "../../assets/images/icon-moon.svg";
 import useLocalStorage from "use-local-storage";
@@ -9,10 +9,12 @@ export const ThemeSwitch = () => {
     const [theme, setTheme] = useLocalStorage('theme', localStorage.getItem('theme') || 'light');
 
     const handleThemeChange = () => {
-        console.log(theme);
         setTheme(theme === 'light' ? 'dark' : 'light');
-        changeTheme(theme);
     };
+
+    useEffect(() => {
+        changeTheme();
+    } , [theme]);
 
     return (
         <div className="switch">

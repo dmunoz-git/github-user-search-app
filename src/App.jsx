@@ -9,14 +9,8 @@ import './App.css'
 function App() {
   const [user, setUser] = useState({});
 
-  const setInitialTheme = () => {
-    const theme = localStorage.getItem('theme') || 'light';
-    changeTheme(theme);
-  }
-
   useEffect(() => {
     getUserInfo('Godm0de').then(setUser);
-    setInitialTheme();
   }, [])
 
   return (
