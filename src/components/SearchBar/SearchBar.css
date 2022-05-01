@@ -48,3 +48,9 @@
 .search-bar__button:hover {
     opacity: 0.5;
 }
+
+.search-bar__404 {
+    min-width: 6.4rem;
+    margin: 0 24px;
+    color:var(--error-color);
+}
