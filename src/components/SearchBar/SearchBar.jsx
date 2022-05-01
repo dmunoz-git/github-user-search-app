@@ -5,10 +5,22 @@ import iconSearch from "../../assets/images/icon-search.svg";
 
 export const SearchBar = ({onSearch}) => {
     const [value, setValue] = useState('');
+    const [error, setError] = useState(false);
 
     const searchUser = (event) => {
         event.preventDefault();
-        getUserInfo(value).then((user) => {onSearch(user)});
+        if(value){
+            getUserInfo(value).then((user) => {
+                if(user.message && user.message === 'Not Found'){
+                    setError(true);
+                }else {
+                    if(error) setError(false);
+                    onSearch(user);
+                }
+                
+            }).catch((error) => console.error(error));
+        }
+        
     }
 
     return (
@@ -21,6 +33,7 @@ export const SearchBar = ({onSearch}) => {
                     placeholder="Search Github username..."
                     onChange={e => setValue(e.target.value)}
                 />
+                { error && <span className="search-bar__404">No results</span>}
                 <button className="search-bar__button" type="submit">Search</button>
         </form>
     )
