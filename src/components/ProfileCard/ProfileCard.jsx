@@ -58,22 +58,22 @@ export const ProfileCard = ({user}) => {
 
                 <div className="profile-card__links">
                     <a href={`https://www.google.com/maps/search/${user.location}`} className={user.location ? "profile-card__link" : "profile-card__link profile-card__link--disabled"}>
-                        <img src={iconLocation} alt="" />
+                        <img className="profile-card__icon" src={iconLocation} alt="" />
                         <span>{user.location ? user.location : "Not Avalible"}</span>
                     </a>
 
                     <a href={user.html_url} className="profile-card__link">
-                        <img src={iconWebsite} alt="" />
+                        <img  className="profile-card__icon" src={iconWebsite} alt="" />
                         <span>{user.html_url}</span>
                     </a>
 
                     <a href={`https://www.twitter.com/${user.twitter_username}`} className={user.twitter_username ? "profile-card__link" : "profile-card__link profile-card__link--disabled"}>
-                        <img src={iconTwitter} alt="" />
+                        <img  className="profile-card__icon" src={iconTwitter} alt="" />
                         <span>{user.twitter_username ? user.twitter_username : "Not Avalible"}</span>
                     </a>
 
                     <a href={`https://www.google.com/search?q=${user.company}`} className={user.company ? "profile-card__link" : "profile-card__link profile-card__link--disabled"}>
-                        <img src={iconCompany} alt="" />
+                        <img  className="profile-card__icon" src={iconCompany} alt="" />
                         <span>{user.company ? user.company : "Not Avalible" }</span>
                     </a>
                 </div>
