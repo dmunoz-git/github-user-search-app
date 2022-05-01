@@ -108,6 +108,7 @@
     line-height: 2.6rem;
     margin-top: 0;
     margin-bottom: 2px;
+    color: var(--title-color);
 }
 
 .profile-card__description {
@@ -126,4 +127,9 @@
 
 .profile-card__date {
     margin-top: 0;
+    color: var(--title-color);
+}
+
+html.dark-theme .profile-card__icon {
+    filter: brightness(4);
 }
