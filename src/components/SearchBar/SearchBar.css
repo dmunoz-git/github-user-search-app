@@ -20,7 +20,7 @@
 .search-bar__input {
     border: 0;
     width: 100%;
-    font-size: var(--body-fs);
+    font-size: 1.2rem;
     background: transparent;
     color: var(--title-color);
 }
@@ -36,7 +36,15 @@
 .search-bar__button{
     background: var(--secondary-color);
     color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.0667rem;
     padding: 0.8333rem 1.0667rem ;
     border: 0;
     border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.search-bar__button:hover {
+    opacity: 0.5;
 }

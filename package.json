@@ -12,6 +12,7 @@
     "moment": "^2.29.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-media": "^1.10.0",
     "use-local-storage": "^2.3.6"
   },
   "devDependencies": {
