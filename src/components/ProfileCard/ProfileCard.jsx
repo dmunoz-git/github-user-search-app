@@ -1,12 +1,15 @@
 import moment from "moment";
-import { useMediaQuery } from "../../services/media";
+import { useContext } from "react";
+import { useMediaQuery } from "../../hooks/mediaQuery";
 import "./ProfileCard.css";
 import iconCompany from "../../assets/images/icon-company.svg";
 import iconLocation from "../../assets/images/icon-location.svg";
 import iconTwitter from "../../assets/images/icon-twitter.svg";
 import iconWebsite from "../../assets/images/icon-website.svg";
+import { UserContext } from "../../context/UserContext";
 
-export const ProfileCard = ({user}) => {
+export const ProfileCard = () => {
+    const {user} = useContext(UserContext);
     const matches = useMediaQuery('(max-width:777px)');
 
     return (
