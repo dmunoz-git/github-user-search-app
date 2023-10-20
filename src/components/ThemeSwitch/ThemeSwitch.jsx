@@ -1,20 +1,10 @@
-import React, { useEffect } from 'react';
 import iconSun from "../../assets/images/icon-sun.svg";
 import iconMoon from "../../assets/images/icon-moon.svg";
-import useLocalStorage from "use-local-storage";
-import {changeTheme} from "../../services/theme";
+import { useToggleTheme } from '../../hooks/toggleTheme';
 import "./ThemeSwitch.css";
 
 export const ThemeSwitch = () => {
-    const [theme, setTheme] = useLocalStorage('theme', localStorage.getItem('theme') || 'light');
-
-    const handleThemeChange = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-    };
-
-    useEffect(() => {
-        changeTheme();
-    } , [theme]);
+    const [theme, handleThemeChange] = useToggleTheme();
 
     return (
         <div className="switch">
@@ -23,5 +13,4 @@ export const ThemeSwitch = () => {
         </div>
     );
 };
-
 
